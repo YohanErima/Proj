@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Option"; ObjectID = "1cl-9q-hFW"; */
+"1cl-9q-hFW.normalTitle" = "オプション";
+
+/* Class = "UINavigationItem"; title = "Menu"; ObjectID = "IgV-xs-OW6"; */
+"IgV-xs-OW6.title" = "メニュー";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "VEH-FA-QSc"; */
+"VEH-FA-QSc.normalTitle" = "開始";
+
+/* Class = "UITextView"; text = "Nom de l'appli"; ObjectID = "xyG-rV-wnf"; */
+"xyG-rV-wnf.text" = "名探偵ろーら";

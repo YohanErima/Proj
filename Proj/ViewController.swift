@@ -12,8 +12,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var ButtonStart: UIButton!
     @IBOutlet weak var ButtonOption: UIButton!
+    @IBOutlet weak var titre: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        titre.text=NSLocalizedString("Titre_Appli", comment: "Titre")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
