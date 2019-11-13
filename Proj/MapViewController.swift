@@ -12,6 +12,7 @@ import CoreLocation
 
 class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDelegate {
 
+    
     @IBOutlet weak var MapVieew: MKMapView!
     let locationManager = CLLocationManager()
     var currentLocation: CLLocation?
@@ -69,22 +70,9 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
         return pin
     }
     
-    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        if let annonation = view.annotation {
-            var latitude = annonation.coordinate.latitude
-            var latitudeString = NSLocalizedString("north", comment: "Label")
-            if latitude < 0 {
-                latitude = -1 * latitude
-                latitudeString = NSLocalizedString("south", comment: "Label")
-            }
-            var longitude = annonation.coordinate.longitude
-            var longitudeString = NSLocalizedString("east", comment: "Label")
-            if longitude < 0 {
-                longitude = -1 * longitude
-                longitudeString = NSLocalizedString("west", comment: "Label")
-            }
+
            
-    }
+    
     
     /*
     // MARK: - Navigation
@@ -96,5 +84,5 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
     }
     */
 
-}
+
 }

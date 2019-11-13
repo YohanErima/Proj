@@ -43,5 +43,7 @@
 	</array>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>Ou sa ou lé stp</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Message Always à afficher</string>
 </dict>
 </plist>
