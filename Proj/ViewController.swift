@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import AVFoundation
+class ViewController: UIViewController, AVAudioPlayerDelegate {
 
-class ViewController: UIViewController {
-
+    var player : AVAudioPlayer!
     @IBOutlet weak var ButtonStart: UIButton!
     @IBOutlet weak var ButtonOption: UIButton!
     @IBOutlet weak var titre: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let audioFileURL = Bundle.main.url(forResource: "All-is-fine", withExtension: "mp3")  // importation de la musique de font
+               do {
+                   let sound = try AVAudioPlayer(contentsOf: audioFileURL!) //récupération de l'url de la musique
+                   player = sound
+                player.play() //  lancement de la musique
+               } catch {
+                   // couldn't load file :(
+               }
         titre.text=NSLocalizedString("Titre_Appli", comment: "Titre")
         // Do any additional setup after loading the view, typically from a nib.
         

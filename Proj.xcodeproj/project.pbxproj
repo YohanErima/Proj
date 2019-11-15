@@ -24,6 +24,7 @@
 		ECFDFF29237EB313008647C1 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFDFF25237EB313008647C1 /* ToastView.swift */; };
 		ECFDFF2A237EB313008647C1 /* Toast.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECFDFF26237EB313008647C1 /* Toast.xib */; };
 		ECFDFF2B237EB313008647C1 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFDFF27237EB313008647C1 /* Toast.swift */; };
+		ECFDFF32237EC6BD008647C1 /* All-is-fine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECFDFF31237EC6BD008647C1 /* All-is-fine.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		ECFDFF2C237EBF39008647C1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ECFDFF2D237EBF7B008647C1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ECFDFF2E237EC04E008647C1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ECFDFF31237EC6BD008647C1 /* All-is-fine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "All-is-fine.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		ECAE6455235DCB94001FACF4 /* Proj */ = {
 			isa = PBXGroup;
 			children = (
+				ECFDFF30237EC69B008647C1 /* sounds */,
 				ECFDFF23237EB313008647C1 /* ToestMessage */,
 				ECAE6456235DCB94001FACF4 /* AppDelegate.swift */,
 				ECAE6458235DCB94001FACF4 /* ViewController.swift */,
@@ -180,6 +183,14 @@
 				ECFDFF27237EB313008647C1 /* Toast.swift */,
 			);
 			path = ToestMessage;
+			sourceTree = "<group>";
+		};
+		ECFDFF30237EC69B008647C1 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				ECFDFF31237EC6BD008647C1 /* All-is-fine.mp3 */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECFDFF32237EC6BD008647C1 /* All-is-fine.mp3 in Resources */,
 				ECAE6461235DCB95001FACF4 /* LaunchScreen.storyboard in Resources */,
 				EC414A5123703E2700763C91 /* Localizable.strings in Resources */,
 				ECFDFF2A237EB313008647C1 /* Toast.xib in Resources */,
