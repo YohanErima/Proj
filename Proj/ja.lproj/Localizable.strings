@@ -7,3 +7,17 @@
 */
 /* Titre */
 "Titre_Appli" = "名探偵ろーら";
+/*Photo*/
+
+"Source_photo"= "写真のソース";
+"choisissez où tu veux prendre la photo"="写真を撮りたい場所を選択してください";
+
+/*actionsheet*/
+"appareil photo"= "カメラ";
+"soit ta camera est cassée ou soit tu fais sur un émulateur donc tu n'as pas acces à la caméra "="カメラが壊れているか、エミュレータを使用しているため、カメラにアクセスできません";
+
+"galerie" = "画廊";
+"annuler" = "キャンセル";
+
+/*message*/
+"message_d'aide"= "ヘルプメッセージ";

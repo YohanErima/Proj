@@ -22,25 +22,25 @@ class PhotoViewController: UIViewController,UIImagePickerControllerDelegate,UINa
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
         
-        let fiche = UIAlertController(title: "Source de La Photo", message: "choisi où tu veux prendre la photo ", preferredStyle: .actionSheet)
-        fiche.addAction(UIAlertAction(title: "appreil photo", style: .default, handler: {(action:UIAlertAction) in
+        let fiche = UIAlertController(title:  NSLocalizedString("Source_photo", comment: "Photo"), message: NSLocalizedString("choisissez où tu veux prendre la photo", comment: "Photo"), preferredStyle: .actionSheet)
+        fiche.addAction(UIAlertAction(title: NSLocalizedString("appareil photo", comment: "actionsheet"), style: .default, handler: {(action:UIAlertAction) in
             if UIImagePickerController.isSourceTypeAvailable(.camera) {
 
                 imagePickerController.sourceType = .camera
                 self.present(imagePickerController,animated: true,completion: nil)
                 
             }else {
-                print("soit ta camera est cassée ou soit tu fais sur un émulateur donc tu n'as pas acces à la caméra ")
+                print(NSLocalizedString("soit ta camera est cassée ou soit tu fais sur un émulateur donc tu n'as pas acces à la caméra ", comment: "actionsheet"))
             }
             
         }))
         
-        fiche.addAction(UIAlertAction(title: "librairie", style: .default, handler: {(action:UIAlertAction)in
+        fiche.addAction(UIAlertAction(title:  NSLocalizedString("galerie", comment: "actionsheet"), style: .default, handler: {(action:UIAlertAction)in
             imagePickerController.sourceType = .photoLibrary
             self.present(imagePickerController,animated: true,completion: nil)
         }))
         
-        fiche.addAction(UIAlertAction(title: "annuler", style: .default, handler: nil))
+        fiche.addAction(UIAlertAction(title: NSLocalizedString("annuler", comment: "actionsheet"), style: .default, handler: nil))
         
         self.present(fiche, animated: true, completion: nil)
 

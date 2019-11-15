@@ -7,3 +7,18 @@
 */
 /* Titre */
 "Titre_Appli" = "detective laura";
+
+/* Photo */
+
+"Source_photo"= "Source of the Photo";
+"choisissez où tu veux prendre la photo"="choose where you want to take the picture";
+
+/* actionsheet */
+"appareil photo"= "camera";
+"soit ta camera est cassée ou soit tu fais sur un émulateur donc tu n'as pas acces à la caméra "="either your camera is broken or you're doing an emulator so you do not have access to the camera";
+
+"galerie" = "gallery";
+"annuler" = "cancel";
+
+/*message*/
+"message_d'aide"= "help message";

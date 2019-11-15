@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         titre.text=NSLocalizedString("Titre_Appli", comment: "Titre")
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

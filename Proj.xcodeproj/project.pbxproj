@@ -20,6 +20,10 @@
 		ECAE646C235DCB95001FACF4 /* ProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAE646B235DCB95001FACF4 /* ProjTests.swift */; };
 		ECAE6477235DCB95001FACF4 /* ProjUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAE6476235DCB95001FACF4 /* ProjUITests.swift */; };
 		ECE4D1D6237ADAAC003B7F99 /* Enigme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE4D1D5237ADAAC003B7F99 /* Enigme.swift */; };
+		ECFDFF28237EB313008647C1 /* myView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFDFF24237EB313008647C1 /* myView.swift */; };
+		ECFDFF29237EB313008647C1 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFDFF25237EB313008647C1 /* ToastView.swift */; };
+		ECFDFF2A237EB313008647C1 /* Toast.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECFDFF26237EB313008647C1 /* Toast.xib */; };
+		ECFDFF2B237EB313008647C1 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFDFF27237EB313008647C1 /* Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +50,8 @@
 		EC4033B3237E781D00CCDE99 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		EC414A5023703E2700763C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EC414A532370429600763C91 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		EC414A542370429700763C91 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EC414A562370436900763C91 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		EC414A572370436900763C91 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EC414A592370437100763C91 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		EC414A5A2370437100763C91 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EC7E955D2366F425006067EC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		EC7E95602366F69E006067EC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		EC7E95622366F6A9006067EC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -68,6 +69,13 @@
 		ECAE6476235DCB95001FACF4 /* ProjUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjUITests.swift; sourceTree = "<group>"; };
 		ECAE6478235DCB95001FACF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECE4D1D5237ADAAC003B7F99 /* Enigme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enigme.swift; sourceTree = "<group>"; };
+		ECFDFF24237EB313008647C1 /* myView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myView.swift; sourceTree = "<group>"; };
+		ECFDFF25237EB313008647C1 /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		ECFDFF26237EB313008647C1 /* Toast.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Toast.xib; sourceTree = "<group>"; };
+		ECFDFF27237EB313008647C1 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		ECFDFF2C237EBF39008647C1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ECFDFF2D237EBF7B008647C1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ECFDFF2E237EC04E008647C1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,7 @@
 		ECAE6455235DCB94001FACF4 /* Proj */ = {
 			isa = PBXGroup;
 			children = (
+				ECFDFF23237EB313008647C1 /* ToestMessage */,
 				ECAE6456235DCB94001FACF4 /* AppDelegate.swift */,
 				ECAE6458235DCB94001FACF4 /* ViewController.swift */,
 				ECAE645A235DCB94001FACF4 /* Main.storyboard */,
@@ -160,6 +169,17 @@
 				ECAE6478235DCB95001FACF4 /* Info.plist */,
 			);
 			path = ProjUITests;
+			sourceTree = "<group>";
+		};
+		ECFDFF23237EB313008647C1 /* ToestMessage */ = {
+			isa = PBXGroup;
+			children = (
+				ECFDFF24237EB313008647C1 /* myView.swift */,
+				ECFDFF25237EB313008647C1 /* ToastView.swift */,
+				ECFDFF26237EB313008647C1 /* Toast.xib */,
+				ECFDFF27237EB313008647C1 /* Toast.swift */,
+			);
+			path = ToestMessage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +294,7 @@
 			files = (
 				ECAE6461235DCB95001FACF4 /* LaunchScreen.storyboard in Resources */,
 				EC414A5123703E2700763C91 /* Localizable.strings in Resources */,
+				ECFDFF2A237EB313008647C1 /* Toast.xib in Resources */,
 				ECAE645E235DCB95001FACF4 /* Assets.xcassets in Resources */,
 				ECAE645C235DCB94001FACF4 /* Main.storyboard in Resources */,
 			);
@@ -301,9 +322,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECE4D1D6237ADAAC003B7F99 /* Enigme.swift in Sources */,
+				ECFDFF2B237EB313008647C1 /* Toast.swift in Sources */,
+				ECFDFF29237EB313008647C1 /* ToastView.swift in Sources */,
 				ECAE6459235DCB94001FACF4 /* ViewController.swift in Sources */,
 				EC7E955E2366F425006067EC /* MapViewController.swift in Sources */,
 				ECAE6457235DCB94001FACF4 /* AppDelegate.swift in Sources */,
+				ECFDFF28237EB313008647C1 /* myView.swift in Sources */,
 				EC4033AB237E617200CCDE99 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,9 +368,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				EC414A5023703E2700763C91 /* Base */,
-				EC414A542370429700763C91 /* fr */,
-				EC414A572370436900763C91 /* ja */,
-				EC414A5A2370437100763C91 /* es */,
+				ECFDFF2C237EBF39008647C1 /* fr */,
+				ECFDFF2D237EBF7B008647C1 /* es */,
+				ECFDFF2E237EC04E008647C1 /* ja */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

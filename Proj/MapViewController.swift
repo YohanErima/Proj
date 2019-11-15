@@ -95,6 +95,18 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
     @IBAction func toStan(_ sender: Any) {
         MapVieew.mapType = .standard
     }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if motion == .motionShake{
+            /*let alertController = UIAlertController(title: nil, message: "t'a secoué le téléphone ",preferredStyle:UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title:"OK",style:UIAlertActionStyle.default,handler: nil))
+            
+            self.present(alertController, animated: true,completion: nil)*/
+            Toast.long(message: NSLocalizedString("message_d'aide", comment: "message"), success: "1", failer: "0")
+        }
+    }
+    
+    
     /*
     // MARK: - Navigation
 
