@@ -79,6 +79,9 @@
                                 <rect key="frame" x="164" y="194" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="ztj-Hv-Mln" kind="show" id="ZEv-68-78C"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwM-mW-Of0">
                                 <rect key="frame" x="164" y="281" width="46" height="30"/>
@@ -115,9 +118,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3gb-qo-c6J">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="605"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Hg-VL-3Jo">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="ici" width="116" id="x3q-MH-LV7">
+                                        <connections>
+                                            <action selector="locUser:" destination="ztj-Hv-Mln" id="CDP-ED-h6q"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="statellite" width="160" id="Zhs-Kv-hlW">
+                                        <connections>
+                                            <action selector="sat:" destination="ztj-Hv-Mln" id="sfP-ho-sui"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="standard" width="158" id="Z0b-X2-zCm"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ta1-vc-w8f"/>
@@ -126,16 +146,17 @@
                     <navigationItem key="navigationItem" id="pZf-Bg-mkP"/>
                     <connections>
                         <outlet property="MapVieew" destination="3gb-qo-c6J" id="Gen-DU-7mW"/>
+                        <outlet property="ici" destination="x3q-MH-LV7" id="ZSt-zY-6JR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqD-0L-lzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2727" y="-460"/>
+            <point key="canvasLocation" x="2085.5999999999999" y="-44.527736131934034"/>
         </scene>
         <!--Item-->
         <scene sceneID="bbL-Lg-RCT">
             <objects>
-                <viewController id="0nS-GG-5bK" sceneMemberID="viewController">
+                <viewController id="0nS-GG-5bK" customClass="SatelliteViewController" customModule="Proj" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UEo-wk-FZj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,7 +172,7 @@
         <!--Item-->
         <scene sceneID="4Ms-KH-ixG">
             <objects>
-                <viewController id="JuL-dr-UIs" sceneMemberID="viewController">
+                <viewController id="JuL-dr-UIs" customClass="IciViewController" customModule="Proj" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qhA-5W-2pd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,25 +184,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zha-tM-Eed" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4086" y="197"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="s9W-bE-mCm">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ejE-19-bBe" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pbo-YX-yFk">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="JuL-dr-UIs" kind="relationship" relationship="viewControllers" id="k0c-vg-0pE"/>
-                        <segue destination="0nS-GG-5bK" kind="relationship" relationship="viewControllers" id="X22-1b-tqO"/>
-                        <segue destination="ztj-Hv-Mln" kind="relationship" relationship="viewControllers" id="U7s-sA-lAG"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9uJ-Vt-mC4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1800.8" y="-11.244377811094454"/>
         </scene>
     </scenes>
 </document>

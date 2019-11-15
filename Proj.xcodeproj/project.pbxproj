@@ -42,13 +42,10 @@
 
 /* Begin PBXFileReference section */
 		EC414A5023703E2700763C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EC414A522370429600763C91 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		EC414A532370429600763C91 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		EC414A542370429700763C91 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EC414A552370436900763C91 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		EC414A562370436900763C91 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		EC414A572370436900763C91 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EC414A582370437100763C91 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		EC414A592370437100763C91 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		EC414A5A2370437100763C91 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EC63A433237C1EAD001C9336 /* IciViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IciViewController.swift; sourceTree = "<group>"; };
@@ -359,9 +356,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				ECAE645B235DCB94001FACF4 /* Base */,
-				EC414A522370429600763C91 /* fr */,
-				EC414A552370436900763C91 /* ja */,
-				EC414A582370437100763C91 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

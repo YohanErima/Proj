@@ -12,11 +12,13 @@ import CoreLocation
 
 class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDelegate {
 
-    
+
     @IBOutlet weak var MapVieew: MKMapView!
     let locationManager = CLLocationManager()
     var currentLocation: CLLocation?
     
+    
+    @IBOutlet weak var ici: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         if CLLocationManager.locationServicesEnabled() {
@@ -70,8 +72,15 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
         return pin
     }
     
-
+    @IBAction func locUser(_ sender: Any) {
+        let userLocation = MapVieew.userLocation
+        let region = MKCoordinateRegionMakeWithDistance((userLocation.location?.coordinate)!,2000,2000)
+        MapVieew.setRegion(region, animated: true)    }
+    
            
+    @IBAction func sat(_ sender: Any) {
+        MapVieew.mapType = .satellite
+    }
     
     
     /*
