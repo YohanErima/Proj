@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-670" y="14"/>
         </scene>
-        <!--Menu-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Proj" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,8 +45,8 @@
                                     <segue destination="vXs-kJ-U6m" kind="show" id="O4g-Tf-hhu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nom de l'appli" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFP-MZ-cVI">
-                                <rect key="frame" x="133" y="75" width="109" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="detective Laura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFP-MZ-cVI">
+                                <rect key="frame" x="133" y="75" width="119" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -56,7 +56,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Menu" id="IgV-xs-OW6"/>
+                    <navigationItem key="navigationItem" title="Home" id="IgV-xs-OW6"/>
                     <connections>
                         <outlet property="ButtonOption" destination="1cl-9q-hFW" id="jnk-As-zYg"/>
                         <outlet property="ButtonStart" destination="VEH-FA-QSc" id="lew-sr-SJJ"/>
@@ -93,8 +93,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="choix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWp-jL-TTz">
-                                <rect key="frame" x="167" y="81" width="41" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWp-jL-TTz">
+                                <rect key="frame" x="167" y="81" width="54" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -125,7 +125,7 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="ici" width="66" id="x3q-MH-LV7">
+                                    <barButtonItem title="here" width="66" id="x3q-MH-LV7">
                                         <connections>
                                             <action selector="locUser:" destination="ztj-Hv-Mln" id="CDP-ED-h6q"/>
                                         </connections>
@@ -145,7 +145,7 @@
                                             <action selector="toStan:" destination="ztj-Hv-Mln" id="yno-cn-JPX"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Photo" width="91.5" id="IMf-vE-iMU">
+                                    <barButtonItem title="picture" width="91.5" id="IMf-vE-iMU">
                                         <connections>
                                             <action selector="Photo:" destination="ztj-Hv-Mln" id="jE5-z2-idL"/>
                                             <segue destination="0nS-GG-5bK" kind="show" id="42P-W5-fdV"/>
@@ -186,7 +186,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oal-SA-QPE">
                                 <rect key="frame" x="127" y="606" width="121" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="choisie ton image"/>
+                                <state key="normal" title="choose a picture"/>
                                 <connections>
                                     <action selector="choisi:" destination="0nS-GG-5bK" eventType="touchUpInside" id="Hba-II-U8p"/>
                                 </connections>

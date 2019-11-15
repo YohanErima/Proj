@@ -41,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		EC4033AA237E617200CCDE99 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		EC4033AF237E781400CCDE99 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		EC4033B1237E781900CCDE99 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		EC4033B3237E781D00CCDE99 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		EC414A5023703E2700763C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EC414A532370429600763C91 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		EC414A542370429700763C91 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -352,6 +355,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				ECAE645B235DCB94001FACF4 /* Base */,
+				EC4033AF237E781400CCDE99 /* fr */,
+				EC4033B1237E781900CCDE99 /* ja */,
+				EC4033B3237E781D00CCDE99 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

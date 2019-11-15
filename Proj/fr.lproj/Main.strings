@@ -2,11 +2,50 @@
 /* Class = "UIButton"; normalTitle = "Option"; ObjectID = "1cl-9q-hFW"; */
 "1cl-9q-hFW.normalTitle" = "Option";
 
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2c3-8e-Nvv"; */
+"2c3-8e-Nvv.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "choix"; ObjectID = "HWp-jL-TTz"; */
+"HWp-jL-TTz.text" = "choix";
+
+/* Class = "UIBarButtonItem"; title = "Photo"; ObjectID = "IMf-vE-iMU"; */
+"IMf-vE-iMU.title" = "Photo";
+
 /* Class = "UINavigationItem"; title = "Menu"; ObjectID = "IgV-xs-OW6"; */
 "IgV-xs-OW6.title" = "Menu";
 
-/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "VEH-FA-QSc"; */
-"VEH-FA-QSc.normalTitle" = "Start";
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "JUO-xx-sN5"; */
+"JUO-xx-sN5.title" = "Item";
 
-/* Class = "UITextView"; text = "Nom de l'appli"; ObjectID = "xyG-rV-wnf"; */
-"xyG-rV-wnf.text" = "Nom de l'appli";
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "VEH-FA-QSc"; */
+"VEH-FA-QSc.normalTitle" = "Commencer";
+
+/* Class = "UIBarButtonItem"; title = "statellite"; ObjectID = "Zhs-Kv-hlW"; */
+"Zhs-Kv-hlW.title" = "statellite";
+
+/* Class = "UIBarButtonItem"; title = "hybrid"; ObjectID = "cyu-kN-Nbr"; */
+"cyu-kN-Nbr.title" = "hybride";
+
+/* Class = "UILabel"; text = "Nom de l'appli"; ObjectID = "eFP-MZ-cVI"; */
+"eFP-MZ-cVI.text" = "Détective Laura";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "hn8-U0-27h"; */
+"hn8-U0-27h.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "jmK-LS-B2z"; */
+"jmK-LS-B2z.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "kdK-Dm-2dZ"; */
+"kdK-Dm-2dZ.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "choisie ton image"; ObjectID = "oal-SA-QPE"; */
+"oal-SA-QPE.normalTitle" = "choisie ton image";
+
+/* Class = "UIBarButtonItem"; title = "standard"; ObjectID = "rEG-e3-N3a"; */
+"rEG-e3-N3a.title" = "standard";
+
+/* Class = "UIBarButtonItem"; title = "ici"; ObjectID = "x3q-MH-LV7"; */
+"x3q-MH-LV7.title" = "ici";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zwM-mW-Of0"; */
+"zwM-mW-Of0.normalTitle" = "Button";
