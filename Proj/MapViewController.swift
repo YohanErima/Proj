@@ -13,6 +13,9 @@ import CoreLocation
 class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDelegate {
 
 
+
+    @IBOutlet weak var Photo: UIBarButtonItem!
+    @IBOutlet weak var mode: UIBarButtonItem!
     @IBOutlet weak var MapVieew: MKMapView!
     let locationManager = CLLocationManager()
     var currentLocation: CLLocation?
@@ -80,9 +83,18 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
            
     @IBAction func sat(_ sender: Any) {
         MapVieew.mapType = .satellite
+        
+            
+        
     }
     
+    @IBAction func tohybrid(_ sender: Any) {
+        MapVieew.mapType = .hybrid
+    }
     
+    @IBAction func toStan(_ sender: Any) {
+        MapVieew.mapType = .standard
+    }
     /*
     // MARK: - Navigation
 

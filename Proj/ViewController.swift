@@ -12,7 +12,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var ButtonStart: UIButton!
     @IBOutlet weak var ButtonOption: UIButton!
-    @IBOutlet weak var titre: UITextView!
+    @IBOutlet weak var titre: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         titre.text=NSLocalizedString("Titre_Appli", comment: "Titre")

@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>parce qu&apos;on peut</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -41,9 +43,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Ou sa ou lé stp</string>
-    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>Message Always à afficher</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Ou sa ou lé stp</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Message Always à afficher</string>
 </dict>
 </plist>

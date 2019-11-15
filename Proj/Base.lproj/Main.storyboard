@@ -45,13 +45,13 @@
                                     <segue destination="vXs-kJ-U6m" kind="show" id="O4g-Tf-hhu"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Nom de l'appli" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xyG-rV-wnf">
-                                <rect key="frame" x="135" y="72" width="125" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nom de l'appli" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFP-MZ-cVI">
+                                <rect key="frame" x="133" y="75" width="109" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -60,7 +60,7 @@
                     <connections>
                         <outlet property="ButtonOption" destination="1cl-9q-hFW" id="jnk-As-zYg"/>
                         <outlet property="ButtonStart" destination="VEH-FA-QSc" id="lew-sr-SJJ"/>
-                        <outlet property="titre" destination="xyG-rV-wnf" id="H5c-nB-yJb"/>
+                        <outlet property="titre" destination="eFP-MZ-cVI" id="XyV-PA-d9N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -93,8 +93,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="choix egnime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTK-Xs-ViE">
-                                <rect key="frame" x="136" y="105" width="102" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="choix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWp-jL-TTz">
+                                <rect key="frame" x="167" y="81" width="41" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -125,17 +125,32 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="ici" width="116" id="x3q-MH-LV7">
+                                    <barButtonItem title="ici" width="66" id="x3q-MH-LV7">
                                         <connections>
                                             <action selector="locUser:" destination="ztj-Hv-Mln" id="CDP-ED-h6q"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="statellite" width="160" id="Zhs-Kv-hlW">
+                                    <barButtonItem title="statellite" id="Zhs-Kv-hlW">
                                         <connections>
                                             <action selector="sat:" destination="ztj-Hv-Mln" id="sfP-ho-sui"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="standard" width="158" id="Z0b-X2-zCm"/>
+                                    <barButtonItem title="hybrid" id="cyu-kN-Nbr">
+                                        <connections>
+                                            <action selector="tohybrid:" destination="ztj-Hv-Mln" id="hiG-9o-VPp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="standard" id="rEG-e3-N3a">
+                                        <connections>
+                                            <action selector="toStan:" destination="ztj-Hv-Mln" id="yno-cn-JPX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Photo" width="91.5" id="IMf-vE-iMU">
+                                        <connections>
+                                            <action selector="Photo:" destination="ztj-Hv-Mln" id="jE5-z2-idL"/>
+                                            <segue destination="0nS-GG-5bK" kind="show" id="42P-W5-fdV"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -146,7 +161,9 @@
                     <navigationItem key="navigationItem" id="pZf-Bg-mkP"/>
                     <connections>
                         <outlet property="MapVieew" destination="3gb-qo-c6J" id="Gen-DU-7mW"/>
+                        <outlet property="Photo" destination="IMf-vE-iMU" id="SV0-sW-B1Y"/>
                         <outlet property="ici" destination="x3q-MH-LV7" id="ZSt-zY-6JR"/>
+                        <outlet property="mode" destination="Zhs-Kv-hlW" id="CD0-fw-ovE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqD-0L-lzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -156,18 +173,38 @@
         <!--Item-->
         <scene sceneID="bbL-Lg-RCT">
             <objects>
-                <viewController id="0nS-GG-5bK" customClass="SatelliteViewController" customModule="Proj" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0nS-GG-5bK" customClass="PhotoViewController" customModule="Proj" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UEo-wk-FZj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5CB-sE-UU6">
+                                <rect key="frame" x="0.0" y="44" width="375" height="328"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oal-SA-QPE">
+                                <rect key="frame" x="127" y="606" width="121" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="choisie ton image"/>
+                                <connections>
+                                    <action selector="choisi:" destination="0nS-GG-5bK" eventType="touchUpInside" id="Hba-II-U8p"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="vVn-E0-EHP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="JUO-xx-sN5"/>
+                    <navigationItem key="navigationItem" id="cSr-ui-QCp"/>
+                    <connections>
+                        <outlet property="PhotoView" destination="5CB-sE-UU6" id="kXd-Ha-0UG"/>
+                        <outlet property="boutonP" destination="oal-SA-QPE" id="bMk-ZO-vaM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SiT-Li-Ss2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3068" y="617"/>
+            <point key="canvasLocation" x="2797.5999999999999" y="-45.42728635682159"/>
         </scene>
         <!--Item-->
         <scene sceneID="4Ms-KH-ixG">
