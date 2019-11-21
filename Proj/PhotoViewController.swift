@@ -48,11 +48,23 @@ class PhotoViewController: UIViewController,UIImagePickerControllerDelegate,UINa
     
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        let image=info[UIImagePickerControllerOriginalImage] as! UIImage
+        if let Myimg = info[UIImagePickerControllerOriginalImage] as? UIImage{
+            PhotoView.contentMode = .scaleToFill
+            PhotoView.image = Myimg
+        }
         
-        PhotoView.image = image
         
+        let imagedata = UIImagePNGRepresentation(PhotoView.image!)
+        let compressedImage = UIImage(data : imagedata!)
         
+        UIImageWriteToSavedPhotosAlbum(compressedImage!, nil , nil ,nil)
+        
+        let alert = UIAlertController(title: "Sved ",message : "Your image has been saved", preferredStyle : .alert)
+        
+        let ok = UIAlertAction(title : "ok" , style: .default, handler: nil)
+        alert.addAction(ok)
+        
+        self.present(alert, animated: true, completion: nil )
         picker.dismiss(animated: true, completion: nil)
     }
     
