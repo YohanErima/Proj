@@ -20,10 +20,13 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
     let locationManager = CLLocationManager()
     var currentLocation: CLLocation?
     
+    @IBOutlet weak var Laura: UIImageView!
+    @IBOutlet weak var Dialog: UITextView!
     
     @IBOutlet weak var ici: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
@@ -39,6 +42,9 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
+        let tap = UITapGestureRecognizer(target : self ,action: Selector(("doubleTapped")))
+        tap.numberOfTapsRequired = 3
+        MapVieew.addGestureRecognizer(tap)
         
         
     }
@@ -140,6 +146,16 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
         
         self.present(alert, animated: true, completion: nil )
         picker.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func doubleTapped() {
+        if(Laura.isHidden == false && Dialog.isHidden == false){
+            Laura.isHidden = true
+            Dialog.isHidden = true
+        }else {
+            Laura.isHidden = false
+            Dialog.isHidden = false
+        }
     }
     
     

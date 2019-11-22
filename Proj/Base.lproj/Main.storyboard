@@ -151,7 +151,7 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qCU-7X-ESt">
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qCU-7X-ESt">
                                 <rect key="frame" x="16" y="527" width="343" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -165,7 +165,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="detectivelaura" translatesAutoresizingMaskIntoConstraints="NO" id="Zgp-fZ-1Ad">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="detectivelaura" translatesAutoresizingMaskIntoConstraints="NO" id="Zgp-fZ-1Ad">
                                 <rect key="frame" x="203" y="253" width="172" height="322"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -176,6 +176,8 @@
                     <tabBarItem key="tabBarItem" title="Item" id="jmK-LS-B2z"/>
                     <navigationItem key="navigationItem" id="pZf-Bg-mkP"/>
                     <connections>
+                        <outlet property="Dialog" destination="qCU-7X-ESt" id="q1d-Yv-ghG"/>
+                        <outlet property="Laura" destination="Zgp-fZ-1Ad" id="tiG-MT-tAS"/>
                         <outlet property="MapVieew" destination="3gb-qo-c6J" id="Gen-DU-7mW"/>
                         <outlet property="ici" destination="x3q-MH-LV7" id="ZSt-zY-6JR"/>
                         <outlet property="mode" destination="Zhs-Kv-hlW" id="CD0-fw-ovE"/>
