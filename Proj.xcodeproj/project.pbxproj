@@ -12,6 +12,7 @@
 		EC7E955E2366F425006067EC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E955D2366F425006067EC /* MapViewController.swift */; };
 		EC7E95612366F69E006067EC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7E95602366F69E006067EC /* CoreLocation.framework */; };
 		EC7E95632366F6A9006067EC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7E95622366F6A9006067EC /* MapKit.framework */; };
+		EC942C81238791B3000909D8 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC942C80238791B3000909D8 /* JSONParser.swift */; };
 		ECAE6457235DCB94001FACF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAE6456235DCB94001FACF4 /* AppDelegate.swift */; };
 		ECAE6459235DCB94001FACF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAE6458235DCB94001FACF4 /* ViewController.swift */; };
 		ECAE645C235DCB94001FACF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAE645A235DCB94001FACF4 /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		EC7E955D2366F425006067EC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		EC7E95602366F69E006067EC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		EC7E95622366F6A9006067EC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EC942C80238791B3000909D8 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		ECAE6453235DCB94001FACF4 /* Proj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAE6456235DCB94001FACF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECAE6458235DCB94001FACF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				ECAE6462235DCB95001FACF4 /* Info.plist */,
 				EC414A4F23703E2700763C91 /* Localizable.strings */,
 				ECE4D1D5237ADAAC003B7F99 /* Enigme.swift */,
+				EC942C80238791B3000909D8 /* JSONParser.swift */,
 				EC4033AA237E617200CCDE99 /* PhotoViewController.swift */,
 			);
 			path = Proj;
@@ -335,6 +338,7 @@
 			files = (
 				ECE4D1D6237ADAAC003B7F99 /* Enigme.swift in Sources */,
 				ECFDFF2B237EB313008647C1 /* Toast.swift in Sources */,
+				EC942C81238791B3000909D8 /* JSONParser.swift in Sources */,
 				ECFDFF29237EB313008647C1 /* ToastView.swift in Sources */,
 				ECAE6459235DCB94001FACF4 /* ViewController.swift in Sources */,
 				EC7E955E2366F425006067EC /* MapViewController.swift in Sources */,

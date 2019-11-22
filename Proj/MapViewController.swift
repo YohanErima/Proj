@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDelegate {
+class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
 
 
@@ -39,6 +39,8 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
+        
+        
     }
     
     
@@ -104,6 +106,40 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
             self.present(alertController, animated: true,completion: nil)*/
             Toast.long(message: NSLocalizedString("message_d'aide", comment: "message"), success: "1", failer: "0")
         }
+    }
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        if UIDevice.current.orientation.isLandscape {
+            print("Landscape")
+            let imagePickerController = UIImagePickerController()
+            imagePickerController.delegate = self
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                imagePickerController.sourceType = .camera
+                self.present(imagePickerController,animated: true,completion: nil)
+                           
+            }else {
+                print(NSLocalizedString("soit ta camera est cassée ou soit tu fais sur un émulateur donc tu n'as pas acces à la caméra ", comment: "actionsheet"))
+            }
+        }
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let Myimg = info[UIImagePickerControllerOriginalImage]
+            
+        
+        
+        
+        let imagedata = UIImagePNGRepresentation(Myimg as! UIImage)
+        let compressedImage = UIImage(data : imagedata!)
+        
+        UIImageWriteToSavedPhotosAlbum(compressedImage!, nil , nil ,nil)
+        
+        let alert = UIAlertController(title: "Sved ",message : "Your image has been saved", preferredStyle : .alert)
+        
+        let ok = UIAlertAction(title : "ok" , style: .default, handler: nil)
+        alert.addAction(ok)
+        
+        self.present(alert, animated: true, completion: nil )
+        picker.dismiss(animated: true, completion: nil)
     }
     
     

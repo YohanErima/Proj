@@ -129,30 +129,24 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="here" width="66" id="x3q-MH-LV7">
+                                    <barButtonItem title="here" width="94" id="x3q-MH-LV7">
                                         <connections>
                                             <action selector="locUser:" destination="ztj-Hv-Mln" id="CDP-ED-h6q"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="statellite" id="Zhs-Kv-hlW">
+                                    <barButtonItem title="statellite" width="99" id="Zhs-Kv-hlW">
                                         <connections>
                                             <action selector="sat:" destination="ztj-Hv-Mln" id="sfP-ho-sui"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="hybrid" id="cyu-kN-Nbr">
+                                    <barButtonItem title="hybrid" width="81.5" id="cyu-kN-Nbr">
                                         <connections>
                                             <action selector="tohybrid:" destination="ztj-Hv-Mln" id="hiG-9o-VPp"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="standard" id="rEG-e3-N3a">
+                                    <barButtonItem title="standard" width="107" id="rEG-e3-N3a">
                                         <connections>
                                             <action selector="toStan:" destination="ztj-Hv-Mln" id="yno-cn-JPX"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="picture" width="91.5" id="IMf-vE-iMU">
-                                        <connections>
-                                            <action selector="Photo:" destination="ztj-Hv-Mln" id="jE5-z2-idL"/>
-                                            <segue destination="0nS-GG-5bK" kind="show" id="42P-W5-fdV"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -165,7 +159,6 @@
                     <navigationItem key="navigationItem" id="pZf-Bg-mkP"/>
                     <connections>
                         <outlet property="MapVieew" destination="3gb-qo-c6J" id="Gen-DU-7mW"/>
-                        <outlet property="Photo" destination="IMf-vE-iMU" id="SV0-sW-B1Y"/>
                         <outlet property="ici" destination="x3q-MH-LV7" id="ZSt-zY-6JR"/>
                         <outlet property="mode" destination="Zhs-Kv-hlW" id="CD0-fw-ovE"/>
                     </connections>
