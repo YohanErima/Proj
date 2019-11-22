@@ -10,15 +10,19 @@ import UIKit
 import MapKit
 import CoreLocation
 
+
 class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
 
 
+    var enigma : Egnime!
     @IBOutlet weak var Photo: UIBarButtonItem!
     @IBOutlet weak var mode: UIBarButtonItem!
     @IBOutlet weak var MapVieew: MKMapView!
     let locationManager = CLLocationManager()
     var currentLocation: CLLocation?
+    var Radius : CLLocationDistance = 100.0
+    var monitorRegion = CLCircularRegion()
     
     @IBOutlet weak var Laura: UIImageView!
     @IBOutlet weak var Dialog: UITextView!
@@ -45,6 +49,9 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
         let tap = UITapGestureRecognizer(target : self ,action: Selector(("doubleTapped")))
         tap.numberOfTapsRequired = 3
         MapVieew.addGestureRecognizer(tap)
+        Laura.layer.zPosition = 1
+        Dialog.layer.zPosition = 2
+        self.monitorRegion = CLCircularRegion(center: CLLocationCoordinate2DMake(-33.8634, 151.211), radius: Radius, identifier: "Lieu à découvrir")
         
         
     }
@@ -125,6 +132,19 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
                            
             }else {
                 print(NSLocalizedString("soit ta camera est cassée ou soit tu fais sur un émulateur donc tu n'as pas acces à la caméra ", comment: "actionsheet"))
+                locationManager.startMonitoring(for: self.monitorRegion)
+                var localisation = CLLocation(latitude:(MapVieew.userLocation.location?.coordinate.latitude)!,longitude:(MapVieew.userLocation.location?.coordinate.longitude)!)
+                var dist = CLLocation(latitude: -20.905108, longitude: 55.50038).distance(from: localisation)
+                if (dist<self.Radius){
+                    let alert = UIAlertController(title: NSLocalizedString("Felicitaion", comment: "Message"),
+                                                  message: NSLocalizedString("message de reussite", comment: "Message"), preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+                
+                Laura.isHidden = false
+                Dialog.isHidden = true
+                
             }
         }
     }
@@ -146,17 +166,44 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
         
         self.present(alert, animated: true, completion: nil )
         picker.dismiss(animated: true, completion: nil)
+        
+        
+        
+        
     }
     
     @objc func doubleTapped() {
-        if(Laura.isHidden == false && Dialog.isHidden == false){
+        ///enigma.getAllDialog()
+        
+        if (Laura.isHidden == false && Dialog.isHidden == false){
             Laura.isHidden = true
             Dialog.isHidden = true
-        }else {
+        } else {
             Laura.isHidden = false
             Dialog.isHidden = false
         }
     }
+    
+    func locationManager(_ manager: CLLocationManager, didStartMonitoringFor region: CLRegion) {
+        print("registering region", region)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        let alert = UIAlertController(title: NSLocalizedString("beware", comment: "Message"),
+                                      message: NSLocalizedString("enter", comment: "Message"), preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
+    
+    func locationManager(_ manager: CLLocationManager, monitoringDidFailFor region: CLRegion?, withError error: Error) {
+        if let r = region {
+            print("Could not monitor region", r.description)
+        }
+        print(error)
+    }
+    
     
     
     /*

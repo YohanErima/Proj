@@ -17,7 +17,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         let audioFileURL = Bundle.main.url(forResource: "All-is-fine", withExtension: "mp3")  // importation de la musique de font
                do {
                    let sound = try AVAudioPlayer(contentsOf: audioFileURL!) //récupération de l'url de la musique

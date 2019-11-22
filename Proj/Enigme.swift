@@ -100,7 +100,7 @@ class Egnime{
 
         }
 
-        return allDialog;
+        return allDialog
     }
     
 }
